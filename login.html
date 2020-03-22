@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>EasyWay</title>
+    <!-- Include CSS File Here -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Include JS File Here -->
+    <script src="login.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <style>
+        body {
+            background-image: url('assets/images/back.jpg');
+            /* background-image: url('assets/images/back3.jpg'); */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main card-2">
+            <h2>Sign In</h2>
+            <form id="form_id" method="post" name="myform" autocomplete="off">
+                <label class="loginText">User Name :</label>
+                <input type="text" name="username" id="username" />
+                <label class="loginText">Password :</label>
+                <input type="password" name="password" id="password" />
+                <label class="checkbox">
+                  <input type="checkbox" value="remember-me" id="remember_me"> Remember me
+              </label>
+                <a href="signup.html" class="newUser"> New User?</a>
+                <input type="button" value="Login" id="submit" onclick="validate()" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
