@@ -28,7 +28,40 @@
     <div class="nav-wrapper">
         <a href="#" class="brand-logo center navlogo">EasyWay</a>
     </div>
-    <div></div>
 </nav>
+
+<div class="form-style-10 widthAdder">
+    <h1 class="center">Enter Details</h1>
+    <form autocomplete="off">
+        <div class="section"><span>1</span>Upload your PassportID number</div>
+        <div class="inner-wrap">
+            <label id="SignUpdecoration">Pass Port ID <input type="text" name="field1" id="passportID" required/></label>
+            <label id="SignUpdecoration">Upload Details<input type="file" name="field1" id="passportPic" required/></label>
+
+        </div>
+
+        <div class="section"><span>2</span>Email & Phone</div>
+        <div class="inner-wrap">
+            <label id="SignUpdecoration">Email Address 
+                    <input type="email" name="field3" id="emailID" required /></label>
+            <label>Phone Number 
+                    <input type="text" name="field4" id="phoneNo" required/></label>
+        </div>
+
+        <div class="section"><span>3</span>Passwords</div>
+        <div class="inner-wrap">
+            <label id="SignUpdecoration">Password 
+                    <input type="password" name="field5" id="password"  required /></label>
+            <label>Confirm Password 
+                    <input type="password" name="field6" id="repassword" required /></label>
+            <span class="privacy-policy">
+                      </span>
+        </div>
+        <div class="button-section">
+            <input type="submit" name="Sign Up" onclick="SignUp(this.form);" />
+        </div>
+    </form>
+</div>
+
 
 </html>
